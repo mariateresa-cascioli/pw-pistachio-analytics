@@ -1,0 +1,82 @@
+.harvest_chart_container {
+    width: 100%;
+    max-height: 50vh;
+    height: 50vh;
+    /* Imposta un'altezza chiara */
+    position: relative;
+    /* Importante per contenere il canvas */
+}
+
+.harvest_chart_wrapper {
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.harvest_chart_wrapper canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+// USO DELLE RISORSE
+
+.resources_chart_container {
+    width: 100%;
+    max-width: 600px;
+    max-height: 70vh;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* Imposta un'altezza chiara */
+    position: relative;
+    /* Importante per contenere il canvas */
+}
+
+.resources_chart_wrapper {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resources_chart_wrapper_small {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -20px auto;
+}
+
+.resources_chart_wrapper_financial {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -20px auto;
+}
+
+.resources_chart_wrapper_bar {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 80px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.harvest_chart_wrapper canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+.slider_cointainer {
+    max-width: 250px;
+    min-width: 250px;
+    margin: auto;
+}

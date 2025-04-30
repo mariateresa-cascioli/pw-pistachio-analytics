@@ -1,0 +1,54 @@
+@use '../App' as app;
+
+.container {
+    padding: 10px 20px;
+    min-height: 60vh;
+    background-color: app.$neutral-light;
+    border-radius: 20px;
+    box-shadow: 0px 10px 18px #00000030;
+}
+
+.menu_container {
+    place-content: center;
+    background-color: #e1d39c;
+    width: fit-content;
+    padding: 5px 30px;
+    border-radius: 0 0 20px 20px;
+    align-items: center;
+    margin-top: -14px;
+}
+
+.menu_label {
+    margin: 2px;
+    padding: 5px 20px;
+    font-size: 13px;
+    color: #322108;
+}
+
+.menu_selected {
+    color: app.$light-satin-sheen-gold;
+    background-color: app.$bistre;
+    border-radius: 20px;
+}
+
+// left component
+
+.description_title {
+    font-size: 20px;
+    font-family: app.$font-semiBold;
+    text-align: left;
+    color: app.$bistre;
+}
+
+.description_container {
+    max-height: 45vh;
+    overflow-y: auto;
+}
+
+.description {
+    font-size: 14px;
+    text-align: justify;
+    color: app.$bistre;
+    font-family: app.$font-regular;
+    padding-right: 10px;
+}

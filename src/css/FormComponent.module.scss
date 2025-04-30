@@ -1,0 +1,62 @@
+@use '../App' as app;
+
+.label_form {
+    text-align: left;
+    font-size: 13px;
+    color: app.$text-dark;
+    font-family: app.$font-semiBold;
+}
+
+.form_button {
+    width: fit-content;
+    padding: 5px 20px;
+    background-color: app.$light-satin-sheen-gold;
+    border: 1px solid app.$bistre;
+    border-radius: 10px;
+    font-size: 13px;
+    color: app.$bistre;
+}
+
+.fast_analytics_button {
+    width: fit-content;
+    padding: 5px 20px;
+    background-color: #90981b;
+    border: 1px solid app.$bistre;
+    border-radius: 10px;
+    font-size: 13px;
+    color: app.$bistre;
+}
+
+.reset_button {
+    background-color: #7a302b;
+    color: #f0f0f0;
+}
+
+.form_select {
+    font-family: "Roboto";
+}
+
+.button_close_modal {
+    position: absolute;
+    right: 13px;
+    top: 16px;
+}
+
+.form_table {
+    border-collapse: collapse;
+}
+
+.form_table>thead>tr>th {
+    background-color: app.$bistre;
+    border: 1px solid app.$bistre;
+    padding: 5px;
+    font-family: app.$font-semiBold;
+    color: app.$text-light;
+}
+
+.form_table>tbody>tr>td {
+    border: 1px solid app.$text-dark;
+    padding: 5px;
+    font-family: app.$font-regular;
+    color: app.$text-dark;
+}
