@@ -52,3 +52,22 @@
     font-family: app.$font-regular;
     padding-right: 10px;
 }
+
+.left_container {
+    width: 30%;
+}
+
+.right_container {
+    width: 70%;
+}
+
+@media (max-width: 700px) {
+
+    .left_container {
+        width: 100%;
+    }
+
+    .right_container {
+        width: 100%;
+    }
+}

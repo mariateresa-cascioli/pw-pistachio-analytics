@@ -136,7 +136,7 @@ export const HarvestComponent = ({ roundedValues, produzioneMensileTop, produzio
                         </div>
                     </div>
                         */}
-                    <div className={classNames("w-100 ml-20", styles.harvest_chart_container)}>
+                    <div className={classNames("w-100 ml-20 ", styles.harvest_chart_container)}>
                         <div className={styles.harvest_chart_wrapper}>
                             <Line data={lineData} options={options} />
                         </div>

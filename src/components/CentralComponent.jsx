@@ -42,7 +42,7 @@ export const CentralComponent = ({ selectedComponent, setSelectedComponent, mont
         <div>
             <div className={styles.container}>
                 <div>
-                    <div className={classNames('flex', styles.menu_container)}>
+                    <div className={classNames('flex wrap', styles.menu_container)}>
                         <div onClick={() => setSelectedComponent('Harvest')} className={selectedComponent === 'Harvest' ? classNames('bold', styles.menu_label, styles.menu_selected) : classNames('semiBold  pointer', styles.menu_label)}>Andamento produttivo</div>
                         <div onClick={() => setSelectedComponent('Resources')} className={selectedComponent === 'Resources' ? classNames('bold', styles.menu_label, styles.menu_selected) : classNames('semiBold pointer', styles.menu_label)}>Uso delle risorse</div>
                         <div onClick={() => setSelectedComponent('Financial')} className={selectedComponent === 'Financial' ? classNames('bold', styles.menu_label, styles.menu_selected) : classNames('semiBold pointer', styles.menu_label)}>Performance finanziaria</div>
@@ -50,10 +50,10 @@ export const CentralComponent = ({ selectedComponent, setSelectedComponent, mont
                 </div>
 
                 <div className="flex wrap vertical-center p-10">
-                    <div Style="width: 30%;">
+                    <div className={styles.left_container}>
                         <LeftComponent title={selectedComponent} />
                     </div>
-                    <div Style="width: 70%;">
+                    <div className={styles.right_container}>
                         {selectedComponent === 'Harvest' ?
                             <HarvestComponent
                                 roundedValues={roundedValues(monthlyProduction)}

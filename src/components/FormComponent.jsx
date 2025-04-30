@@ -281,12 +281,12 @@ export const FormComponent = ({ obj, setObj }) => {
                 </div>
                 <div Style="padding: 5px 0 20px;" className="w-100">
                     <div className={classNames('bold', styles.label_form)} Style="justify-self: left;">Costanti</div>
-                    <div className="flex ">
-                        <div className="flex">
+                    <div className="flex wrap">
+                        <div className="flex wrap">
                             <div className={classNames('pointer mr-10 semiBold', styles.form_button)} onClick={() => setOpenDistributionModal(true)}>Distribuzione mensile della produzione</div>
                             <div className={classNames('pointer mr-10 semiBold', styles.form_button)} onClick={() => setOpenProductionModal(true)}>Produzione annua stimata</div>
                         </div>
-                        <div className="flex" Style="margin-left: auto;">
+                        <div className="flex wrap" Style="margin-left: auto;">
                             <div className={classNames('pointer mr-10 semiBold', styles.fast_analytics_button)} onClick={() => handleFastAnalyticsButton('low')}>Condizioni sfavorevoli</div>
                             <div className={classNames('pointer mr-10 semiBold', styles.fast_analytics_button)} onClick={() => handleFastAnalyticsButton('medium')}>Condizioni medie</div>
                             <div className={classNames('pointer mr-10 semiBold', styles.fast_analytics_button)} onClick={() => handleFastAnalyticsButton('high')}>Condizioni ottimali</div>
